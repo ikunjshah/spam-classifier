@@ -2,8 +2,6 @@ import nltk
 import streamlit as st
 import pickle
 import string
-nltk.download('punkt')
-nltk.download('stopwords')
 from sklearn.naive_bayes import MultinomialNB
 from nltk.stem.porter import PorterStemmer
 ps = PorterStemmer()
