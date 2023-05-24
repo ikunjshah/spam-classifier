@@ -4,7 +4,8 @@ import pickle
 import string
 from sklearn.naive_bayes import MultinomialNB
 from nltk.stem.porter import PorterStemmer
-from nltk import punkt
+import nltk
+nltk.download('punkt')
 ps = PorterStemmer()
 
 tfidf = pickle.load(open('tfidf.pkl', 'rb'))
